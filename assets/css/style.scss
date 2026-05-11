@@ -1,82 +1,105 @@
 ---
 ---
 
-@import "minima";
+// Override minima dark skin variables BEFORE import
+$background-color:       #0d1117;
+$text-color:             #c9d1d9;
+$brand-color:            #4a9eff;
+$brand-color-light:      #79c0ff;
+$code-background-color:  #161b22;
+$border-color-01:        #21262d;
+$border-color-02:        #30363d;
+$border-color-03:        #8b949e;
+$site-title-color:       #f0f6fc;
+$link-base-color:        #4a9eff;
+$link-visited-color:     #79c0ff;
+$link-hover-color:       #79c0ff;
+$header-background-color: #010409;
+$header-link-color:      #f0f6fc;
+$table-text-align:       left;
 
-// Accent color — subtle blue-green, fits infosec/tech
-$accent: #4a9eff;
+@import "minima/skins/dark";
+@import "minima/initialize";
 
-// Slightly wider content for readability
+// Accent stripe at top
+.site-header {
+  border-top: 3px solid $brand-color;
+  border-bottom: 1px solid $border-color-01;
+  background-color: $header-background-color;
+}
+
+// Ensure body and html are never white
+html, body {
+  background-color: $background-color;
+  color: $text-color;
+}
+
+// Wider content
 .wrapper {
   max-width: 820px;
 }
 
-// Site header refinements
-.site-header {
-  border-top: 3px solid #{$accent};
-  border-bottom: none;
-}
-
+// Site title
 .site-title,
 .site-title:visited {
   font-weight: 700;
   letter-spacing: 0.03em;
+  color: $site-title-color;
 }
 
-// Nav link hover accent
-.page-link:hover {
-  color: #{$accent};
+// Nav links
+.page-link {
+  color: $header-link-color;
+  &:hover { color: $brand-color-light; text-decoration: none; }
 }
 
-// Post list on home page
+// Post list
 .post-list {
   margin-left: 0;
-
   li {
     padding: 1.4rem 0;
-    border-bottom: 1px solid rgba(255,255,255,0.07);
+    border-bottom: 1px solid $border-color-01;
     list-style: none;
+    background-color: transparent;
   }
 }
 
 .post-meta {
   font-size: 0.85rem;
-  opacity: 0.6;
+  color: $border-color-03;
 }
 
-// Post titles — accent on hover
-h2.post-link > a,
 .post-link {
   font-size: 1.35rem;
   font-weight: 600;
-
-  &:hover {
-    color: #{$accent};
-    text-decoration: none;
-  }
+  &:hover { color: $brand-color-light; text-decoration: none; }
 }
 
-// Post content typography
+// Post content
 .post-content {
   h2, h3, h4 {
     margin-top: 2rem;
     padding-bottom: 0.3rem;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid $border-color-01;
   }
+  p { line-height: 1.75; }
 
-  p {
-    line-height: 1.75;
+  // Code blocks
+  pre, code {
+    background-color: $code-background-color;
+    border: 1px solid $border-color-01;
   }
 }
 
-// Post header title
 .post-title {
   font-size: 2rem;
   line-height: 1.2;
+  color: $site-title-color;
 }
 
 // Footer
 .site-footer {
-  border-top: 1px solid rgba(255,255,255,0.08);
-  opacity: 0.7;
+  background-color: $header-background-color;
+  border-top: 1px solid $border-color-01;
+  color: $border-color-03;
 }
