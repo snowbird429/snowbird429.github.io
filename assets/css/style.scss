@@ -1,0 +1,82 @@
+---
+---
+
+@import "minima";
+
+// Accent color — subtle blue-green, fits infosec/tech
+$accent: #4a9eff;
+
+// Slightly wider content for readability
+.wrapper {
+  max-width: 820px;
+}
+
+// Site header refinements
+.site-header {
+  border-top: 3px solid #{$accent};
+  border-bottom: none;
+}
+
+.site-title,
+.site-title:visited {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+// Nav link hover accent
+.page-link:hover {
+  color: #{$accent};
+}
+
+// Post list on home page
+.post-list {
+  margin-left: 0;
+
+  li {
+    padding: 1.4rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    list-style: none;
+  }
+}
+
+.post-meta {
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
+
+// Post titles — accent on hover
+h2.post-link > a,
+.post-link {
+  font-size: 1.35rem;
+  font-weight: 600;
+
+  &:hover {
+    color: #{$accent};
+    text-decoration: none;
+  }
+}
+
+// Post content typography
+.post-content {
+  h2, h3, h4 {
+    margin-top: 2rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  p {
+    line-height: 1.75;
+  }
+}
+
+// Post header title
+.post-title {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+// Footer
+.site-footer {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  opacity: 0.7;
+}

@@ -14,5 +14,5 @@ looking to level up.
 **Connect with me:**
 
 - Email: [keithrussell@rustek.me](mailto:keithrussell@rustek.me)
-- Twitter: [@rustek186480](https://twitter.com/rustek186480)
+- Twitter/X: [@keith_bug_hunt](https://x.com/keith_bug_hunt)
 - LinkedIn: [keithruss-infosec](https://www.linkedin.com/in/keithruss-infosec/)

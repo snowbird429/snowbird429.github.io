@@ -7,14 +7,14 @@ baseurl: ""
 url: "https://rustek.me"
 author: Keith Russell
 
-twitter_username: rustek186480
+twitter_username: keith_bug_hunt
 linkedin_username: keithruss-infosec
 
 theme: minima
 minima:
   skin: dark
   social_links:
-    - { platform: twitter, user_url: "https://twitter.com/rustek186480" }
+    - { platform: twitter, user_url: "https://x.com/keith_bug_hunt" }
     - { platform: linkedin, user_url: "https://www.linkedin.com/in/keithruss-infosec/" }
 
 plugins:
