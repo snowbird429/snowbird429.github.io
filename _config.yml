@@ -2,6 +2,7 @@ remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: dark
 
 title: Rustek
+logo: /assets/images/logo.png
 name: &name "Keith Russell"
 description: "Journey of an Information Security Professional"
 url: "https://rustek.me"
@@ -10,6 +11,7 @@ repository: "snowbird429/snowbird429.github.io"
 
 author:
   name: "Keith Russell"
+  avatar: /assets/images/logo.png
   bio: "Information security professional sharing insights on professional growth, learning, and goal realization in InfoSec."
   location: "United States"
   email: "keithrussell@rustek.me"
