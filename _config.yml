@@ -1,0 +1,24 @@
+title: Rustek
+email: keithrussell@rustek.me
+description: >-
+  Journey of an Information Security Professional — sharing insights on
+  professional growth, learning, and goal realization in InfoSec.
+baseurl: ""
+url: "https://rustek.me"
+author: Keith Russell
+
+twitter_username: rustek186480
+linkedin_username: keithruss-infosec
+
+theme: minima
+minima:
+  skin: dark
+  social_links:
+    - { platform: twitter, user_url: "https://twitter.com/rustek186480" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/keithruss-infosec/" }
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+permalink: /:title/
