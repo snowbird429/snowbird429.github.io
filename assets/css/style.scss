@@ -1,105 +1,68 @@
 ---
 ---
 
-// Override minima dark skin variables BEFORE import
-$background-color:       #0d1117;
-$text-color:             #c9d1d9;
-$brand-color:            #4a9eff;
-$brand-color-light:      #79c0ff;
-$code-background-color:  #161b22;
-$border-color-01:        #21262d;
-$border-color-02:        #30363d;
-$border-color-03:        #8b949e;
-$site-title-color:       #f0f6fc;
-$link-base-color:        #4a9eff;
-$link-visited-color:     #79c0ff;
-$link-hover-color:       #79c0ff;
-$header-background-color: #010409;
-$header-link-color:      #f0f6fc;
-$table-text-align:       left;
+@import "minima";
 
-@import "minima/skins/dark";
-@import "minima/initialize";
-
-// Accent stripe at top
-.site-header {
-  border-top: 3px solid $brand-color;
-  border-bottom: 1px solid $border-color-01;
-  background-color: $header-background-color;
+// Force dark everywhere — no white backgrounds
+html, body {
+  background-color: #0d1117 !important;
+  color: #c9d1d9;
 }
 
-// Ensure body and html are never white
-html, body {
-  background-color: $background-color;
-  color: $text-color;
+.site-header {
+  background-color: #010409 !important;
+  border-top: 3px solid #4a9eff;
+  border-bottom: 1px solid #21262d;
+}
+
+.site-footer {
+  background-color: #010409 !important;
+  border-top: 1px solid #21262d;
+  color: #8b949e;
 }
 
 // Wider content
-.wrapper {
-  max-width: 820px;
-}
+.wrapper { max-width: 820px; }
 
 // Site title
 .site-title,
-.site-title:visited {
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  color: $site-title-color;
-}
+.site-title:visited { font-weight: 700; letter-spacing: 0.03em; }
 
-// Nav links
-.page-link {
-  color: $header-link-color;
-  &:hover { color: $brand-color-light; text-decoration: none; }
-}
+// Nav + links
+.page-link:hover,
+.post-link:hover { color: #79c0ff; text-decoration: none; }
+
+a { color: #4a9eff; }
+a:visited { color: #79c0ff; }
+a:hover { color: #79c0ff; }
 
 // Post list
 .post-list {
   margin-left: 0;
   li {
     padding: 1.4rem 0;
-    border-bottom: 1px solid $border-color-01;
+    border-bottom: 1px solid #21262d;
     list-style: none;
     background-color: transparent;
   }
 }
 
-.post-meta {
-  font-size: 0.85rem;
-  color: $border-color-03;
-}
+.post-meta { font-size: 0.85rem; color: #8b949e; }
 
-.post-link {
-  font-size: 1.35rem;
-  font-weight: 600;
-  &:hover { color: $brand-color-light; text-decoration: none; }
-}
+.post-link { font-size: 1.35rem; font-weight: 600; }
 
 // Post content
+.post-title { font-size: 2rem; line-height: 1.2; }
+
 .post-content {
+  p { line-height: 1.75; }
   h2, h3, h4 {
     margin-top: 2rem;
     padding-bottom: 0.3rem;
-    border-bottom: 1px solid $border-color-01;
+    border-bottom: 1px solid #21262d;
   }
-  p { line-height: 1.75; }
-
-  // Code blocks
   pre, code {
-    background-color: $code-background-color;
-    border: 1px solid $border-color-01;
+    background-color: #161b22 !important;
+    border: 1px solid #21262d;
   }
-}
-
-.post-title {
-  font-size: 2rem;
-  line-height: 1.2;
-  color: $site-title-color;
-}
-
-// Footer
-.site-footer {
-  background-color: $header-background-color;
-  border-top: 1px solid $border-color-01;
-  color: $border-color-03;
 }
