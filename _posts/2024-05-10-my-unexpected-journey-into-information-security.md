@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: single
 title: "My Unexpected Journey into Information Security"
 date: 2024-05-10
-author: Keith Russell
-categories: []
+author_profile: true
+read_time: true
 ---
 
 *This post is being restored. Content coming soon.*

@@ -1,9 +1,11 @@
 ---
-layout: post
+layout: single
 title: "Breaking into Cybersecurity Part 1: Communication"
 date: 2024-05-24
-author: Keith Russell
-categories: [Getting Your First Job]
+author_profile: true
+read_time: true
+categories:
+  - Getting Your First Job
 ---
 
 *This post is being restored. Content coming soon.*

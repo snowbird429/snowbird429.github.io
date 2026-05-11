@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: single
 title: "Sharing My Information Security Journey"
 date: 2024-05-09
-categories: []
+author_profile: true
+read_time: true
 ---
 
 *This post is being restored. Content coming soon.*

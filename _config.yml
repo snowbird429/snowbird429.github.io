@@ -1,25 +1,48 @@
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: dark
+
 title: Rustek
-email: keithrussell@rustek.me
-description: >-
-  Journey of an Information Security Professional — sharing insights on
-  professional growth, learning, and goal realization in InfoSec.
-baseurl: ""
+name: &name "Keith Russell"
+description: "Journey of an Information Security Professional"
 url: "https://rustek.me"
-author: Keith Russell
+baseurl: ""
+repository: "snowbird429/snowbird429.github.io"
 
-twitter_username: keith_bug_hunt
-linkedin_username: keithruss-infosec
-
-theme: minima
-minima:
-  skin: dark
-  date_format: "%b %-d, %Y"
-  social_links:
-    - { platform: twitter, user_url: "https://x.com/keith_bug_hunt" }
-    - { platform: linkedin, user_url: "https://www.linkedin.com/in/keithruss-infosec/" }
+author:
+  name: "Keith Russell"
+  bio: "Information security professional sharing insights on professional growth, learning, and goal realization in InfoSec."
+  location: "United States"
+  email: "keithrussell@rustek.me"
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://x.com/keith_bug_hunt"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/keithruss-infosec/"
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-remote-theme
+  - jekyll-include-cache
 
+paginate: 5
+paginate_path: /page:num/
 permalink: /:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: false
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
